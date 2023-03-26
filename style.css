@@ -1,10 +1,34 @@
+
+.section{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    flex-direction:row ;
+}
 .tabla{
+    margin-bottom: 0px;
+    margin-right: 15px;
     border: 1px solid black;
     overflow: hidden;
     width: 300px;
     height: 450px;
     text-align: center;
 }
+@media (max-width: 600px) {
+    .section {
+        display: flex;
+        flex-direction: column;
+       
+
+    }
+}
+@media (max-width: 600px) {
+    .tabla{
+        margin-bottom: 15px;
+
+    }
+}
+
 .tabla button{
     background-color: black;
     color: #fff;
